@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Fashion Store</div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <span id="cartCount">0</span>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <h1>Summer Collection 2024</h1>
+            <p>Discover the latest trends in fashion</p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <label><input type="checkbox" value="shirts"> Shirts</label>
+                <label><input type="checkbox" value="pants"> Pants</label>
+                <label><input type="checkbox" value="dresses"> Dresses</label>
+                <label><input type="checkbox" value="accessories"> Accessories</label>
+            </div>
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <input type="range" min="0" max="200" value="100" id="priceRange">
+                <span id="priceValue">$100</span>
+            </div>
+        </section>
+
+        <section class="products" id="productsContainer">
+            <!-- Products will be dynamically added here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your one-stop destination for trendy fashion.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@fashionstore.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="cart.js"></script>
+</body>
+</html>
